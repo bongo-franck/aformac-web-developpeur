@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Fatal Error</title>
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body class="connect">
+		<div class="wrapper">
+
+			<header class="box-gris">
+				<div class="logo">
+					Fatal Error
+				</div>
+				<div class="auth">
+					<div class="greeting">Bonjour, Aformac</div>
+					<a class="disconnect" href="#">se déconnecter</a>
+					<a class="bouton box-vert create" href="#"><span>ajouter un article</span></a>
+				</div>
+			</header>
+
+			<div class="contenu-page">
+				<main>
+					<article class="box-gris">
+						<form class="form-post-new" method="post" action="#">
+							<p>
+								<label for="post_title">Titre</label>
+								<input id="post_title" type="text" />
+							</p>
+							<p>
+								<label for="post_content">Contenu</label>
+								<textarea id="post_content" rows="10"></textarea>
+							</p>
+							<p>
+								<label for="post_cat">Catégorie</label>
+								<select id="post_cat">
+									<option>Catégrie 1</option>
+									<option>Catégrie 2</option>
+									<option>Catégrie 3</option>
+									<option>Catégrie 4</option>
+									<option>Catégrie 5</option>
+								</select>
+							</p>
+							<p>
+								<label for="post_author">Auteur</label>
+								<select id="post_author">
+									<option>Auteur 1</option>
+									<option>Auteur 2</option>
+									<option>Auteur 3</option>
+									<option>Auteur 4</option>
+									<option>Auteur 5</option>
+								</select>
+							</p>
+							<p>
+								<label for="post_date">Date</label>
+								<input id="post_date" type="text" />
+							</p>
+							<input type="submit" class="bouton box-vert create" value="publier l'article"/>
+						</form>
+					</article>
+				</main>
+				<aside>
+					<div class="categories box-orange">
+						<h3>Catégories</h3>
+						<ul class="liste-categories">
+							<li class="categorie-item"><a href="#">Catégorie 1</a></li>
+							<li class="categorie-item"><a href="#">Catégorie 2</a></li>
+							<li class="categorie-item"><a href="#">Catégorie 3</a></li>
+							<li class="categorie-item"><a href="#">Catégorie 4</a></li>
+							<li class="categorie-item"><a href="#">Catégorie 5</a></li>
+						</ul>
+					</div>
+				</aside>
+			</div>
+			<footer class="box-gris">
+				<div class="logo">
+					Fatal Error
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
