@@ -1,2 +1,32 @@
-git commit 
-//mettre le commentaire puis :wq pour sortir
+//configuration git avec compte github
+git config --global user.name "Votre nom ou pseudo"
+git config --global user.email "votre@email.com"
+//list config
+git config --list
+//initialisation du repertoire git
+git init
+//ajout fichier à l'index git
+git add monfichier.txt
+ou
+//ajout de tous les fichiers
+git add .
+//enregistrement des modifications
+git commit -m commentaire
+//annuler le dernier commit (nouveau commit qui fait l'inverse du precedent)
+git revert SHADuCommit
+//affichage des historiques (:q pour sortir)
+git log
+//se positionner sur un commit
+git checkout SHADuCommit
+//se positionner sur le commit le plus récent
+git checkout master
+//annuler tous les changements que je n'ai pas encore commiter
+git reset --hard‌
+//recuperer du code 
+git clone https://github.com/facebook/react.git
+//definir les remote
+git remote add origin https://github.com/bongo-franck/aformac-web-developpeur.git
+//push vers le serveur
+git push -u origin master
+//pull depuis le serveur
+git pull origin master
